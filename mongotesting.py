@@ -34,8 +34,8 @@ def update_monsters():
     print(f'Inserted {count} creatures.')
     return
 
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["5eContent"]
+db_conn = pymongo.MongoClient("PM ME FOR ACCESS")
+mydb = db_conn["5eContent"]
 if "spells" in mydb.list_collection_names():
     mydb["spells"].drop()
 update_spells()
@@ -45,12 +45,12 @@ update_monsters()
 
 
 
-# mydb = myclient["hello"]
+# mydb = db_conn["hello"]
 # mycol = mydb["customers"]
-# myclient.drop_database('mydatabase')
+# db_conn.drop_database('mydatabase')
 # mydict = {"name": "John", "address": "Highway 37" }
 # x = mycol.insert_one(mydict)
-# print(myclient.list_database_names())
+# print(db_conn.list_database_names())
 # print(mydb.list_collection_names())
 
 # print(x.inserted_id)

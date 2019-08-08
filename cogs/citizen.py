@@ -32,7 +32,7 @@ class citizen(commands.Cog):
 /: \\___\\  / .  /\\
 \\' / . / /____/..\\
  \\/___/  \\'  '\\  /
-          \\'__'\\/```"""+f'\nRolling **{num_rolls}d{die_size}**... Rolled {rolls} for a total of **{sum(rolls)+r_mod}**!')
+          \\'__'\\/```"""+f'\nRolling **{dice}**... Rolled {rolls} for a total of **{sum(rolls)+r_mod}**!')
 
 
 def setup(client):
