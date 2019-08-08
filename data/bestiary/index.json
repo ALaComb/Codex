@@ -1,0 +1,9 @@
+{
+	"DMG": "bestiary-dmg.json",
+	"GGR": "bestiary-ggr.json",
+	"MM": "bestiary-mm.json",
+	"MTF": "bestiary-mtf.json",
+	"PHB": "bestiary-phb.json",
+	"VGM": "bestiary-vgm.json",
+	"XGE": "bestiary-xge.json"
+}

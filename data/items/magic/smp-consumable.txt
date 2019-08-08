@@ -1,0 +1,70 @@
+Spell Scroll Level 0 	10
+Ammunition +1(each) 	25
+Potion of Healing 	50
+Quaal's Feather Token Anchor 	50
+Spell Scroll Level 1 	60
+Philter of Love 	90
+Ammunition +2(ea) 	100
+Potion of Poison 	100
+Dust of Dryness(1 pellet) 	120
+Elixir of Health 	120
+Keoghtom's Ointment(Per dose) 	120
+Spell Scroll Level 2 	120
+Potion of Fire Breath 	150
+Potion of Greater Healing 	150
+Potion of Climbing 	180
+Potion of Heroism 	180
+Potion of Invisibility 	180
+Potion of Mind Reading 	180
+Potion of Water Breathing 	180
+Scroll of Protection 	180
+Nolzur's Marvelous Pigments 	200
+Potion of Animal Friendship 	200
+Spell Scroll Level 3 	200
+Quaal's Feather Token Fan 	250
+Quaal's Feather Token Whip 	250
+Potion of Diminution 	270
+Potion of Growth 	270
+Dust of Disappearance 	300
+Necklace of Fireballs(One bead) 	300
+Potion of Gaseous Form 	300
+Potion of Resistance 	300
+Universal Solvent 	300
+Spell Scroll Level 4 	320
+Ammunition +3(ea) 	400
+Potion of Speed 	400
+Sovereign Glue 	400
+Horn of Blasting 	450
+Potion of Superior Healing 	450
+Dust of Sneezing and Choking 	480
+Necklace of Fireballs(Two beads) 	480
+Oil of Slipperiness 	480
+Potion of Flying 	500
+Arrow of Slaying(ea) 	600
+Spell Scroll Level 5 	640
+Bead of Force 	960
+Elemental Gem 	960
+Necklace of Fireballs(Three beads) 	960
+Potion of Clairvoyance 	960
+Potion of Vitality 	960
+Spell Scroll Level 6 	1280
+Potion of Supreme Healing 	1350
+Chime of Opening 	1500
+Necklace of Fireballs(Four beads) 	1600
+Oil of Etherealness 	1920
+Ioun Stone Absorption 	2400
+Spell Scroll Level 7 	2560
+Quaal's Feather Token Bird 	3000
+Quaal's Feather Token Swan Boat 	3000
+Oil of Sharpness 	3200
+Necklace of Fireballs(Five beads) 	3840
+Potion of Invulnerability 	3840
+Gem of Brightness 	5000
+Spell Scroll Level 8 	5120
+Deck of Illusions 	6120
+Necklace of Fireballs(Six beads) 	7680
+Spell Scroll Level 9 	10240
+Ioun Stone Greater Absorption 	31000
+Rod of Absorption 	50000
+Talisman of Ultimate Evil 	61440
+Talisman of Pure Good 	71680

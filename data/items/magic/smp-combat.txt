@@ -1,0 +1,126 @@
+Vicious Weapon 	350
+Adamantine Armor 	500
+Mithral Armor 	800
++1 Weapon 	1000
+Sword of Life-Stealing 	1000
+Ioun Stone Protection 	1200
+Wand of the War Mage +1 	1200
+Bracers of Archery 	1500
+Circlet of Blasting 	1500
+Javelin of Lightning 	1500
+Prayer Bead - Smiting 	1500
+Wind Fan 	1500
+Sword of Sharpness 	1700
+Staff of the Adder 	1800
+Dancing Sword 	2000
+Glamoured Studded Leather 	2000
+Pipes of the Sewers 	2000
+Prayer Bead - Bless 	2000
+Saddle of the Cavalier 	2000
+Sword of Wounding 	2000
+Frost Brand 	2200
+Dagger of Venom 	2500
+Gloves of Missile Snaring 	3000
+Ioun Stone Agility 	3000
+Ioun Stone Fortitude 	3000
+Ioun Stone Insight 	3000
+Ioun Stone Intellect 	3000
+Ioun Stone Leadership 	3000
+Ioun Stone Strength 	3000
+Staff of Withering 	3000
+Cloak of Protection 	3500
+Oathbow 	3500
+Ring of Protection 	3500
++2 Weapon 	4000
+Boots of Speed 	4000
+Dragon Scale Mail 	4000
+Elven Chain 	4000
+Ioun Stone Regeneration 	4000
+Iron Bands of Bilarro 	4000
+Prayer Bead - Curing 	4000
+Rope of Entanglement 	4000
+Wand of Enemy Detection 	4000
+Luckstone 	4200
+Wand of the War Mage +2 	4800
+Flame Tongue 	5000
+Periapt of Wound Closure 	5000
+Ring of Evasion 	5000
+Ring of the Ram 	5000
+Tentacle Rod 	5000
+Animated Shield 	6000
+Armor of Resistance 	6000
+Arrow-Catching Shield 	6000
+Belt of Dwarvenkind 	6000
+Bracers of Defense 	6000
+Ioun Stone Reserve 	6000
+Pearl of Power 	6000
+Pipes of Haunting 	6000
+Ring of Resistance 	6000
+Robe of Scintillating Colors 	6000
+Scimitar of Speed 	6000
+Shield of Missile Attraction 	6000
+Giant Slayer 	7000
+Mace of Smiting 	7000
+Brooch of Shielding 	7500
+Amulet of Health 	8000
+Dragon Slayer 	8000
+Gauntlets of Ogre Power 	8000
+Headband of Intellect 	8000
+Mace of Disruption 	8000
+Mace of Terror 	8000
+Nine Lives Stealer(Fully Charged) 	8000
+Wand of Magic Missiles 	8000
+Wand of Web 	8000
+Staff of Thunder and Lightning 	10000
+Wand of Binding 	10000
+Wand of Fear 	10000
+Ioun Stone Awareness 	12000
+Rod of the Pact Keeper +1 	12000
+Staff of Charming 	12000
+Sunblade 	12000
+Staff of Healing 	13000
+Ring of Shooting Stars 	14000
+Ioun Stone Mastery 	15000
++3 Weapon 	16000
+Hammer of Thunderbolts 	16000
+Rod of the Pact Keeper +2 	16000
+Staff of Fire 	16000
+Staff of Swarming Insects 	16000
+Wand of Paralysis 	16000
+Ring of Fire Elemental Command 	17000
+Dwarven Thrower 	18000
+Wand of the War Mage +3 	19200
+Efreeti Chain 	20000
+Ring of Free Action 	20000
+Sentinel Shield 	20000
+Staff of Striking 	21000
+Ring of Spell Storing 	24000
+Vorpal Sword 	24000
+Ring of Water Elemental Command 	25000
+Rod of Alertness 	25000
+Staff of Frost 	26000
+Instrument of the Bards - Fochulan Bandlore 	26500
+Instrument of the Bards - Mac-Fuirmidh Cittern 	27000
+Rod of Lordly Might 	28000
+Rod of the Pact Keeper +3 	28000
+Instrument of the Bards - Doss Lute 	28500
+Instrument of the Bards - Canaith Mandolin 	30000
+Mantle of Spell Resistance 	30000
+Ring of Spell Turning 	30000
+Prayer Bead - Favor 	32000
+Wand of Fireballs 	32000
+Wand of Lightning Bolts 	32000
+Wand of Polymorph 	32000
+Instrument of the Bards - Cli Lyre 	35000
+Scarab of Protection 	36000
+Sword of Answering 	36000
+Staff of the Woodlands 	44000
+Spellguard Shield 	50000
+Cloak of Displacement 	60000
+Robe of Stars 	60000
+Weapon of Warning 	60000
+Prayer Bead - Wind Walking 	96000
+Instrument of the Bards - Anstruth Harp 	109000
+Instrument of the Bards - Ollamh Harp 	125000
+Prayer Bead - Summons 	128000
+Holy Avenger 	165000

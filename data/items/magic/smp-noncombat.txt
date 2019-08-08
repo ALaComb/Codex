@@ -1,0 +1,59 @@
+Helm of Comprehend Languages 	500
+Driftglobe 	750
+Trident of Fish Command 	800
+Cap of Water Breathing 	1000
+Eversmoking Bottle 	1000
+Quiver of Ehlonna 	1000
+Ioun Stone Sustenance 	1000
+Ring of Warmth 	1000
+Goggles of Night 	1500
+Horseshoes of the Zephyr 	1500
+Mariner's Armor 	1500
+Necklace of Adaption 	1500
+Ring of Water Walking 	1500
+Wand of Magic Detection 	1500
+Wand of Secrets 	1500
+Gloves of Swimming and Climbing 	2000
+Heward's Handy Haversack 	2000
+Rope of Climbing 	2000
+Ring of Feather Falling 	2000
+Boots of Elvenkind 	2500
+Eyes of Minute Seeing 	2500
+Eyes of the Eagle 	2500
+Ring of Jumping 	2500
+Dimensional Shackles 	3000
+Eyes of Charming 	3000
+Medallion of Thoughts 	3000
+Ring of Swimming 	3000
+Bag of Holding 	4000
+Boots of Levitation 	4000
+Ring of Animal Influence 	4000
+Boots of Striding and Springing 	5000
+Cloak of Arachnida 	5000
+Cloak of Elvenkind 	5000
+Gloves of Thievery 	5000
+Hat of Disguise 	5000
+Horseshoes of Speed 	5000
+Immovable Rod 	5000
+Lantern of Revealing 	5000
+Periapt of Health 	5000
+Periapt of Proof Against Poison 	5000
+Slippers of Spider Climbing 	5000
+Cloak of the Bat 	6000
+Cloak of the Manta Ray 	6000
+Ring of X-Ray Vision 	6000
+Cape of the Mountebank 	8000
+Portable Hole 	8000
+Apparatus of Kwalish 	10000
+Boots of the Winterlands 	10000
+Folding Boat 	10000
+Ring of Invisibility 	10000
+Helm of Telepathy 	12000
+Cube of Force 	16000
+Ring of Mind Shielding 	16000
+Rod of Rulership 	16000
+Mirror of Life Trapping 	18000
+Amulet of Proof Against Detection and Location 	20000
+Robe of Eyes 	30000
+Gem of Seeing 	32000
+Plate Armor of Etherealness 	48000

@@ -1,0 +1,17 @@
+Ivory Goat(Travail) 	400
+Golden Lion(ea) 	600
+Ivory Goat(Traveling) 	1000
+Staff of the Python 	2000
+Onyx Dog 	3000
+Silver Raven 	5000
+Silver Horn of Valhalla 	5600
+Bag of Tricks   6000
+Marble Elephant 	6000
+Bowl of Commanding Water Elementals 	8000
+Brazier of Commanding Fire Elementals 	8000
+Censer of Controlling Air Elementals 	8000
+Stone of Controlling Earth Elementals 	8000
+Brass Horn of Valhalla 	8400
+Bronze Horn of Valhalla 	11200
+Iron Horn of Valhalla 	14000
+Ivory Goat(Terror) 	20000

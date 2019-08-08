@@ -1,0 +1,36 @@
++1 Armor 	1500
++1 Shield 	1500
+Sending Stones 	2000
+Wings of Flying 	5000
+Alchemy Jug 	6000
++2 Armor 	6000
++2 Shield 	6000
+Ebony Fly 	6000
+Bronze Griffon 	8000
+Broom of Flying 	8000
+Serpentine Owl 	8000
+Winged Boots 	8000
+Dwarven Plate 	9000
+Potion of Longevity 	9000
+Carpet of Flying 	12000
+Ring of Regeneration 	12000
+Sphere of Annihilation 	15000
+Armor of Invulnerability 	18000
+Talisman of the Sphere 	20000
++3 Armor 	24000
++3 Shield 	24000
+Defender 	24000
+Ring of Earth Elemental Command 	31000
+Robe of the Archmagi 	34000
+Ring of Air Elemental Command 	35000
+Cubic Gate 	40000
+Crystal Ball 	50000
+Helm of Teleportation 	64000
+Daern's Instant Fortress 	75000
+Ring of Telekinesis 	80000
+Cloak of Invisibility 	80000
+Rod of Security 	90000
+Staff of Power 	95500
+Obsidian Steed 	128000
+Decanter of Endless Water 	135000
+Amulet of the Planes 	160000
