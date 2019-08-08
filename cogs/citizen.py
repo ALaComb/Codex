@@ -6,6 +6,10 @@ class citizen(commands.Cog):
     def __init__(self,client):
         self.client = client
 
+    @commands.command()
+    async def gitpushtest(self, context):
+        await context.send(f'Hey it works!')
+
     # Event Sample
     @commands.Cog.listener()
     async def on_ready(self):
