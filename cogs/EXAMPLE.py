@@ -13,8 +13,8 @@ class EXAMPLE(commands.Cog):
     # Command Sample
     @commands.command()
     @commands.has_permissions(manage_messages=True)
-    async def zzz(self, context):
-        await context.send(f'Pong! {round(self.client.latency * 1000)}ms')
+    async def zzz(self, ctx):
+        await ctx.send(f'Pong! {round(self.client.latency * 1000)}ms')
 
 def setup(client):
     client.add_cog(EXAMPLE(client))

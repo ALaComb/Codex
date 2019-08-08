@@ -13,7 +13,7 @@ class soothsayer(commands.Cog):
 
     # Command Sample
     @commands.command(aliases = ['8ball'])
-    async def eightball(self, context, *, question):
+    async def eightball(self, ctx, *, question):
         responses = ['It is certain.',
                     'It is decidedly so.',
                     'Without a doubt.',
@@ -34,7 +34,7 @@ class soothsayer(commands.Cog):
                     'My sources say no.',
                     'Outlook not so good.',
                     'Very doubtful.']
-        await context.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
+        await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
 
 def setup(client):
     client.add_cog(soothsayer(client))

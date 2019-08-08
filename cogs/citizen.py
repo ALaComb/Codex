@@ -14,7 +14,7 @@ class citizen(commands.Cog):
     # Command Sample
     ## Add kh and kl and other dice commands.
     @commands.command(aliases = ['r'])
-    async def roll(self, context, dice="1d20+0"):
+    async def roll(self, ctx, dice="1d20+0"):
         num_rolls,die_size = dice.split('d')
         if '+' in die_size:
             die_size,r_mod = die_size.split('+')
@@ -28,7 +28,7 @@ class citizen(commands.Cog):
         for i in range(int(num_rolls)):
             rolls.append(random.randrange(1,int(die_size)))
 
-        await context.send("""``` /\\' .\\    _____
+        await ctx.send("""``` /\\' .\\    _____
 /: \\___\\  / .  /\\
 \\' / . / /____/..\\
  \\/___/  \\'  '\\  /
