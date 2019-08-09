@@ -11,6 +11,10 @@ class citizen(commands.Cog):
     async def on_ready(self):
         print('Citizen has entered the inn.')
 
+    @commands.command()
+    async def test(self,ctx):
+        await ctx.send('Oh yeah!')
+
     # Command Sample
     ## Add kh and kl and other dice commands.
     @commands.command(aliases = ['r'])
