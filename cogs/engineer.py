@@ -11,7 +11,7 @@ class engineer(commands.Cog):
 
     @commands.command()
     async def status(self, ctx, cogName):
-        ctx.send(ctx.bot.extensions)
+        await ctx.send(ctx.bot.extensions)
 
 
 def setup(client):
