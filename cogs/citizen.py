@@ -19,6 +19,9 @@ class citizen(commands.Cog):
     ## Add kh and kl and other dice commands.
     @commands.command(aliases = ['r'])
     async def roll(self, ctx, dice="1d20+0"):
+        """
+        This is the roll command!
+        """
         num_rolls,die_size = dice.split('d')
         if '+' in die_size:
             die_size,r_mod = die_size.split('+')
