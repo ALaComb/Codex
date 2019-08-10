@@ -2,3 +2,4 @@ output.log
 *.code-workspace
 .idea
 *.pyc
+bot.py
