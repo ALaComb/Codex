@@ -11,6 +11,9 @@ class owner(commands.Cog):
 
     @commands.command()
     async def ping(self, ctx):
+        """
+        Shows latency between messages sent to the server and the bot's response.
+        """
         await ctx.send(f'Pong! {round(self.client.latency * 1000)}ms')
 
     # @commands.command()
@@ -29,6 +32,9 @@ class owner(commands.Cog):
     @commands.command(aliases = ['cleanup', 'wipedown'])
     @commands.has_permissions(manage_messages=True)
     async def clear(self, ctx, amount=5):
+        """
+        Deletes the last 5 messages in the current channel, or however many you specify.
+        """
         await ctx.channel.purge(limit=amount)
 
 def setup(client):
