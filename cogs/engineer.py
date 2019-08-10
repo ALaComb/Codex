@@ -20,7 +20,7 @@ class engineer(commands.Cog):
     @commands.command()
     async def branch(self, ctx):
         branch = os.popen('git symbolic-ref --short HEAD').read()
-        await ctx.send(f'Codex is currently running on branch {branch}')
+        await ctx.send(f'Codex is currently running on branch `{branch}`')
 
 
 def setup(client):
