@@ -12,12 +12,11 @@ class engineer(commands.Cog):
 
     @commands.command()
     async def status(self, ctx: Context, cogName: str):
-        await ctx.send(f'{ctx.bot.extensions}')
-        #bot: Bot = ctx.bot
-        #stat=''
-        #if bot.extensions.get(cogName) is None:
-        #    stat='not '
-        #ctx.send(f'Cog {cogName} is {stat}loaded')
+        bot: Bot = ctx.bot
+        stat=''
+        if bot.extensions.get(f'cogs.{cogName}') is None:
+            stat='not '
+        ctx.send(f'Cog {cogName} is {stat}loaded')
 
 
 def setup(client):
