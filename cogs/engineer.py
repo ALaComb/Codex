@@ -13,8 +13,7 @@ class engineer(commands.Cog):
 
     @commands.command()
     async def status(self, ctx : Context, cogName : str):
-        bot : Bot = ctx.bot
-        await ctx.send(f"{bot.extensions}")
+        await ctx.send("lol")
 
 
 def setup(client):
