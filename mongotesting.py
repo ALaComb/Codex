@@ -36,7 +36,7 @@ def update_monsters():
     print(f'Inserted {count} creatures.')
     return
 
-db_conn = pymongo.MongoClient("mongodb://CodexDB:Llqlmfxmv3iY5XEP@codexcluster-shard-00-00-rje0a.mongodb.net:27017,codexcluster-shard-00-01-rje0a.mongodb.net:27017,codexcluster-shard-00-02-rje0a.mongodb.net:27017/test?ssl=true&replicaSet=CodexCluster-shard-0&authSource=admin&retryWrites=true&w=majority")
+db_conn = pymongo.MongoClient(os.environ["DATABASE_CONNECTION_WRITE"])
 
 # if "spells" in mydb.list_collection_names():
 #     mydb["spells"].drop()

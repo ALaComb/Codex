@@ -1,3 +1,6 @@
+## This is here for reference in the version controlled code.
+## bot.py is the code that is running on the EC2 server.
+
 import discord
 import pymongo, json
 import os
