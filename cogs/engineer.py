@@ -25,7 +25,7 @@ class engineer(commands.Cog):
     @commands.command()
     async def system(self, ctx, command):
         pipe = os.popen(command)
-        await ctx.send(f'{pipe.read()}')
+        await ctx.send(f'```{pipe.read()}```')
 
 
 def setup(client):
