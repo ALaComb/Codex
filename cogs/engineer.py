@@ -22,11 +22,6 @@ class engineer(commands.Cog):
         branch = os.popen('git symbolic-ref --short HEAD').read()
         await ctx.send(f'I am currently running on branch `{branch}`')
 
-    @commands.command()
-    async def system(self, ctx, command):
-        pipe = os.popen(command)
-        await ctx.send(f'```{pipe.read()}```')
-
 
 def setup(client):
     client.add_cog(engineer(client))
