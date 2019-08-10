@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 from discord.ext.commands import Context, Bot
 
@@ -12,8 +11,12 @@ class engineer(commands.Cog):
         print('Engineer has entered the inn.')
 
     @commands.command()
-    async def status(self, ctx : Context, cogName : str):
-        await ctx.send("lol")
+    async def status(self, ctx: Context, cogName: str):
+        bot: Bot = ctx.bot
+        stat=''
+        if bot.extensions.get(cogName) is None:
+            stat='not '
+        ctx.send(f'Cog {cogName} is {stat}loaded')
 
 
 def setup(client):
