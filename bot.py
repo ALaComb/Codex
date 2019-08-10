@@ -65,7 +65,7 @@ async def pull(ctx, branch):
 def reloadcogs():
     for filename in os.listdir('./cogs'):
         if filename.endswith('.py'):
-            if codex.extensions.get(f'cogs.{filename[:-3]}') != None:
+            if codex.extensions.get(f'cogs.{filename[:-3]}') is not None:
                 codex.unload_extension(f'cogs.{filename[:-3]}')
             codex.load_extension(f'cogs.{filename[:-3]}')
 
