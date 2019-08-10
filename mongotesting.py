@@ -3,7 +3,8 @@ import json
 import os
 
 def update_spells():
-    newcol = mydb["spells"]
+    mydb = db_conn["spellbook"]
+    newcol = mydb["rawdata"]
     print('Created spell collection')
     with open("./data/spells/index.json",'r') as f:
         docs = json.load(f)
@@ -19,7 +20,8 @@ def update_spells():
     return
 
 def update_monsters():
-    newcol = mydb["monsters"]
+    mydb = db_conn["bestiary"]
+    newcol = mydb["rawdata"]
     print('Created monster collection')
     with open("./data/bestiary/index.json",'r') as f:
         docs = json.load(f)
@@ -34,13 +36,13 @@ def update_monsters():
     print(f'Inserted {count} creatures.')
     return
 
-db_conn = pymongo.MongoClient("PM ME FOR ACCESS")
-mydb = db_conn["5eContent"]
-if "spells" in mydb.list_collection_names():
-    mydb["spells"].drop()
+db_conn = pymongo.MongoClient("mongodb://CodexDB:Llqlmfxmv3iY5XEP@codexcluster-shard-00-00-rje0a.mongodb.net:27017,codexcluster-shard-00-01-rje0a.mongodb.net:27017,codexcluster-shard-00-02-rje0a.mongodb.net:27017/test?ssl=true&replicaSet=CodexCluster-shard-0&authSource=admin&retryWrites=true&w=majority")
+
+# if "spells" in mydb.list_collection_names():
+#     mydb["spells"].drop()
 update_spells()
-if "monsters" in mydb.list_collection_names():
-    mydb["monsters"].drop()
+# if "monsters" in mydb.list_collection_names():
+#     mydb["monsters"].drop()
 update_monsters()
 
 
