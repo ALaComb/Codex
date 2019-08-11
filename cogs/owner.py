@@ -16,19 +16,6 @@ class owner(commands.Cog):
         """
         await ctx.send(f'Pong! {round(self.client.latency * 1000)}ms')
 
-    # @commands.command()
-    # async def load(self, ctx, extension):
-    #     self.client.load_extension(f'cogs.{extension}')
-
-    # @commands.command()
-    # async def unload(self, ctx, extension):
-    #     self.client.unload_extension(f'cogs.{extension}')
-
-    # @commands.command()
-    # async def reload(self, ctx, extension):
-    #     self.client.unload_extension(f'cogs.{extension}')
-    #     self.client.load_extension(f'cogs.{extension}')
-
     @commands.command(aliases = ['cleanup', 'wipedown'])
     @commands.has_permissions(manage_messages=True)
     async def clear(self, ctx, amount=5):

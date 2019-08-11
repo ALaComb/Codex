@@ -23,6 +23,7 @@ class citizen(commands.Cog):
         This is the roll command!
         """
         num_rolls,die_size = dice.split('d')
+        r_mod = 0
         if '+' in die_size:
             die_size,r_mod = die_size.split('+')
             r_mod = int(r_mod)
