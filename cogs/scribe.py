@@ -16,12 +16,13 @@ class scribe(commands.Cog):
         mydb = db_write_conn["logbook"]
         newcol = mydb["userlog"]
         newcol.addrow({"name": member, "auditdate": datetime.datetime.today(), "status":"join"})
-        print(f'{member} has joined a server.')
 
     # Add database logging.
     @commands.Cog.listener()
     async def on_member_remove(self, member):
-        print(f'{member} has left a server.')
+        mydb = db_write_conn["logbook"]
+        newcol = mydb["userlog"]
+        newcol.addrow({"name": member, "auditdate": datetime.datetime.today(), "status":"remove"})
 
 
 
