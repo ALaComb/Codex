@@ -67,7 +67,7 @@ def roll_calc(roll_command):
     curr_unit = ""
     kdc = re.compile(r"D\d+K")
     kc = re.compile(r"D")
-    if len(kdc.findall(roll_command)) == len(kc.findall(roll_command)):
+    if len(kdc.findall(roll_command)) != len(kc.findall(roll_command)):
         return ('Error: A KH/KL is unassociated with a die roll.')
     for i in dice:
         if i not in r"0123456789+-*/%^().DKHL":
