@@ -61,7 +61,7 @@ def roll_calc(roll_command):
     new_dice = ""
     curr_unit = ""
     for i in dice:
-        if i not in r"0123456789+-*/%^().dkhl":
+        if i not in r"0123456789+-*/%^().DKHL":
             return ('Error: Invalid character in roll command. Valid ' +
                     'characters are `0123456789+-*/%^().dkhl`\nInvalid ' +
                     f'character: {i}')
