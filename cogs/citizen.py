@@ -65,10 +65,15 @@ def roll_calc(roll_command):
     dice = roll_command.upper().strip()
     new_dice = ""
     curr_unit = ""
-    kdc = re.compile(r"D\d+K")
-    kc = re.compile(r"D")
+    kdc = re.compile(r"(D)(\d+)(K)")
+    kc = re.compile(r"(D)")
     if len(kdc.findall(roll_command)) != len(kc.findall(roll_command)):
-        return ('Error: A KH/KL is unassociated with a die roll.')
+        return ('Error: A KH/KL is unassociated with a die roll.\n' +
+                f'Values: "D\\d+K" -> {kdc.findall(roll_command)}\n' +
+                f'        "D" -> {kc.findall(roll_command)}')
+    else:
+        return (f'Values: "D\\d+K" -> {kdc.findall(roll_command)}\n' +
+                f'        "D" -> {kc.findall(roll_command)}')
     for i in dice:
         if i not in r"0123456789+-*/%^().DKHL":
             return ('Error: Invalid character in roll command. Valid ' +
