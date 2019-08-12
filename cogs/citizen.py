@@ -17,6 +17,8 @@ class citizen(commands.Cog):
         await ctx.send('Oh yeah!')
 
     # Roll command.
+    # - Decimals completely break math.
+    # - KH/KL break math when not a part of a die roll.
     @commands.command(aliases=['r'])
     async def roll(self, ctx, *, dice="1d20"):
         """
