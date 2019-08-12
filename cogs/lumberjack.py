@@ -1,8 +1,8 @@
-import discord
 from discord.ext import commands
 
+
 class lumberjack(commands.Cog):
-    def __init__(self,client):
+    def __init__(self, client):
         self.client = client
 
     # Event Sample
@@ -12,7 +12,8 @@ class lumberjack(commands.Cog):
 
     @commands.Cog.listener()
     async def on_command_error(self, ctx, error):
-        # Error handling for Python errors, not discord.py errors. Those should be handled with specific error handling.
+        # Error handling for Python errors, not discord.py errors.
+        # Those should be handled with specific error handling.
         await ctx.send(f'{error}')
 
 # @codex.event
@@ -21,6 +22,7 @@ class lumberjack(commands.Cog):
 #         await ctx.send('Not a valid command.')
 #     elif isinstance(error, commands.MissingPermissions):
 #         await ctx.send('You do not have permission to use that command.')
+
 
 def setup(client):
     client.add_cog(lumberjack(client))

@@ -2,39 +2,42 @@ import pymongo
 import json
 import os
 
+
 def update_spells():
     mydb = db_conn["spellbook"]
     newcol = mydb["rawdata"]
     print('Created spell collection')
-    with open("./data/spells/index.json",'r') as f:
+    with open("./data/spells/index.json", 'r') as f:
         docs = json.load(f)
     for doc in docs:
-        with open(f'./data/spells/{docs[doc]}','r') as f:
+        with open(f'./data/spells/{docs[doc]}', 'r') as f:
             data = json.load(f)
             x = newcol.insert_many(data["spell"])
 
     count = 0
-    for i in newcol.find({},{"name":1}):
+    for i in newcol.find({}, {"name": 1}):
         count += 1
     print(f'Inserted {count} spells.')
     return
+
 
 def update_monsters():
     mydb = db_conn["bestiary"]
     newcol = mydb["rawdata"]
     print('Created monster collection')
-    with open("./data/bestiary/index.json",'r') as f:
+    with open("./data/bestiary/index.json", 'r') as f:
         docs = json.load(f)
     for doc in docs:
-        with open(f'./data/bestiary/{docs[doc]}','r') as f:
+        with open(f'./data/bestiary/{docs[doc]}', 'r') as f:
             data = json.load(f)
             x = newcol.insert_many(data["monster"])
 
     count = 0
-    for i in newcol.find({},{"name":1}):
+    for i in newcol.find({}, {"name": 1}):
         count += 1
     print(f'Inserted {count} creatures.')
     return
+
 
 db_conn = pymongo.MongoClient(os.environ["DATABASE_CONNECTION_WRITE"])
 
@@ -44,7 +47,6 @@ update_spells()
 # if "monsters" in mydb.list_collection_names():
 #     mydb["monsters"].drop()
 update_monsters()
-
 
 
 # mydb = db_conn["hello"]
@@ -75,8 +77,7 @@ update_monsters()
 # x = mycol.insert_many(mylist)
 # print(x.inserted_ids)
 
-#Account name: MongoDB
-#PW: password
-#Account Domain: mongodb
-#Service Name: MongoDB
-
+# Account name: MongoDB
+# PW: password
+# Account Domain: mongodb
+# Service Name: MongoDB
