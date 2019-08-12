@@ -18,9 +18,9 @@ class citizen(commands.Cog):
 
     # Roll command.
     @commands.command(aliases=['r'])
-    async def roll(self, ctx, *, dice="1d20+0"):
+    async def roll(self, ctx, *, dice="1d20"):
         """
-        'r' will also roll.
+        Use this to roll dice or do math.
 
         The roll command supports NdX rolls and PEMDAS operations.
 
@@ -40,13 +40,16 @@ class citizen(commands.Cog):
         """
         dice = dice.replace(" ", "")
         roll_return = roll_calc(dice)
-        await ctx.send("""``` /\\' .\\    _____
+        if "Error:" in roll_return:
+            await ctx.send(roll_return)
+        else:
+            await ctx.send("""``` /\\' .\\    _____
 /: \\___\\  / .  /\\
 \\' / . / /____/..\\
  \\/___/  \\'  '\\  /
           \\'__'\\/```""" +
-                       f'\nRolling **{dice.lower()}**... ' +
-                       f'Rolled **{roll_return}**!')
+                           f'\nRolling **{dice.lower()}**... ' +
+                           f'Rolled **{roll_return}**!')
 
 
 def setup(client):
@@ -58,6 +61,8 @@ def roll_calc(roll_command):
     new_dice = ""
     curr_unit = ""
     for i in dice:
+        if i not in "0123456789+-*/%^().":
+            return "Error: Invalid character in roll command."
         if i in ['(', ')', '*', '/', '%', '+', '-']:
             if curr_unit != "":
                 new_dice = new_dice + str(dice_eval(curr_unit))
