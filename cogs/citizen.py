@@ -45,8 +45,8 @@ class citizen(commands.Cog):
 \\' / . / /____/..\\
  \\/___/  \\'  '\\  /
           \\'__'\\/```""" +
-                       f'\nRolling **{dice.lower()}**...' +
-                       f'Rolled **{sum(roll_return)}**!')
+                       f'\nRolling **{dice.lower()}**... ' +
+                       f'Rolled **{roll_return}**!')
 
 
 def setup(client):
