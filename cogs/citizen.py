@@ -83,6 +83,8 @@ def dice_eval(unit):
     rolls = []
     if "D" in unit:
         working = unit.split('D')
+        if working[0] == "":
+            working[0] = "1"
         if working[0].isdigit() and len(working) == 2:
             die_eval["N"] = int(working[0])
             if "K" in working[1]:
@@ -91,7 +93,10 @@ def dice_eval(unit):
                     die_eval["X"] = int(working[1][0])
                     die_eval["KH"] = int(working[1][1])
                     for i in range(die_eval["N"]):
-                        rolls.append(random.randrange(1, die_eval["X"]))
+                        if die_eval["X"] == 1:
+                            rolls.append(1)
+                        else:
+                            rolls.append(random.randrange(1, die_eval["X"]))
                     rolls.sort(reverse=True)
                     return sum(rolls[:die_eval["KH"]])
                 elif "L" in working[1]:
