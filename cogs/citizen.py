@@ -19,12 +19,15 @@ class citizen(commands.Cog):
     # Roll command.
     # - Decimals completely break math.
     # - KH/KL break math when not a part of a die roll.
+    #   - Possible patchy, pseuo solution:
+    #       len(re.findall("d\d+k")) ?= len(re.findall("k"))
     @commands.command(aliases=['r'])
     async def roll(self, ctx, *, dice="1d20"):
         """
         Use this to roll dice or do math.
 
         The roll command supports NdX rolls and PEMDAS operations.
+        Decimal numbers are not supported at the moment.
 
         Dice
         N   = number of dice
@@ -40,7 +43,7 @@ class citizen(commands.Cog):
          ^ = exponential
         () = parenthesis supported
         """
-        dice = dice.replace(" ", "")
+        dice = dice.replace(' ', '')
         roll_return = roll_calc(dice)
         if "Error:" in roll_return:
             await ctx.send(roll_return)
@@ -62,6 +65,10 @@ def roll_calc(roll_command):
     dice = roll_command.upper().strip()
     new_dice = ""
     curr_unit = ""
+    kdc = re.compile(r"D\d+K")
+    kc = re.compile(r"D")
+    if len(kdc.findall(roll_command)) == len(kc.findall(roll_command)):
+        return ('Error: A KH/KL is unassociated with a die roll.')
     for i in dice:
         if i not in r"0123456789+-*/%^().DKHL":
             return ('Error: Invalid character in roll command. Valid ' +
