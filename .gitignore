@@ -3,3 +3,4 @@ output.log
 .idea
 *.pyc
 bot.py
+#.vscode folder will not be ignored because we have so many people using VSC. :)
