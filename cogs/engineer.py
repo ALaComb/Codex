@@ -23,7 +23,7 @@ class engineer(commands.Cog):
             message = 'could not be found'
         else:
             message = f'is loaded as: {ex}'
-        await ctx.send(f'{cogName} {message}.')
+        await ctx.send(f'Cog {cogName} {message}.')
 
     @commands.command()
     async def branch(self, ctx):
