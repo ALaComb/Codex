@@ -15,7 +15,7 @@ class engineer(commands.Cog):
     @commands.command()
     async def status(self, ctx: Context, cogName: str):
         """
-        Displays if a cog is currently running.
+        Displays if a cog is currently loaded.
         """
         ex = ctx.bot.extensions.get(f'cogs.{cogName}')
 
@@ -27,6 +27,9 @@ class engineer(commands.Cog):
 
     @commands.command()
     async def branch(self, ctx):
+        """
+        Displays what branch I'm currently running on.
+        """
         branch = os.popen('git symbolic-ref --short HEAD').read()
         await ctx.send(f'I am currently running on branch `{branch}`')
 
