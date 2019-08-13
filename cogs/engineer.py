@@ -14,8 +14,16 @@ class engineer(commands.Cog):
 
     @commands.command()
     async def status(self, ctx: Context, cogName: str):
+        """
+        Displays if a cog is currently running.
+        """
         ex = ctx.bot.extensions.get(f'cogs.{cogName}')
-        await ctx.send(f'{ex}')
+
+        if ex is None:
+            message = 'could not be found'
+        else:
+            message = f'is loaded as: {ex}'
+        await ctx.send(f'{cogName} {message}.')
 
     @commands.command()
     async def branch(self, ctx):
