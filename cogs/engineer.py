@@ -31,7 +31,7 @@ class engineer(commands.Cog):
         Displays what branch I'm currently running on.
         """
         branch = os.popen('git symbolic-ref --short HEAD').read()
-        await ctx.send(f'I am currently running on branch `{branch}`')
+        await ctx.send(f'I am currently running on branch `{branch}`.')
 
 
 def setup(client):
